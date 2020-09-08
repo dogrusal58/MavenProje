@@ -22,7 +22,7 @@ public class Day10_DropDown {
     public void test1(){
         driver.get("http://amazon.com");
         WebElement dropDown = driver.findElement(By.id("searchDropdownBox"));
-        // Select class'ından nesne üretmeden dropdown üzerinde işlem yapayız.
+        // Select class'ından nesne üretmeden dropdown üzerinde işlem yapamayız.
         // Eğer mülakatta dropdown ile ilgili bir soru gelirse, kesinlikle
         // select class'ından bahsetmeniz gerekiyor.
         Select select = new Select(dropDown);

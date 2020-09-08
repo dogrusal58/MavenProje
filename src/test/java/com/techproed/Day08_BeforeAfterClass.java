@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class Day08_BeforeAfterClass {
     @Test
     public void test1(){
+
         System.out.println("test 1 çalıştı");
     }
 

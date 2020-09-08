@@ -20,10 +20,12 @@ public class Day08_BeforeAfterMethod {
     }
     @Test
     public void test2(){
+
         System.out.println("Test 2 çalıştı..");
     }
     @After
     public void MethoddanSonra(){
+
         System.out.println("@after çalıştı..");
     }
 }

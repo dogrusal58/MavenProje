@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Day07_Tekrar {
@@ -23,6 +24,24 @@ public class Day07_Tekrar {
 
         WebElement ilkSite = tekrar.findElement(By.xpath("//h3[@class='LC20lb DKV0Md']"));
         ilkSite.click();
+
+        tekrar.navigate().back();
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        WebElement gorseller =tekrar.findElement(By.className("HF9Klc iJddsb"));
+        gorseller.click();
+        WebElement secenek =tekrar.findElement(By.xpath("//span[@class='hIOe2']"+Keys.ENTER));
+        //secenek.click();
+
+        List<WebElement> listem = tekrar.findElements(By.tagName("a"));
+        for (WebElement w: listem){
+            System.out.println(w.getText());
+        }
+
 
 
 
